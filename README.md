@@ -9,6 +9,8 @@
 - **Synchronous code** runs line by line, waiting for each line to finish before moving to the next one. It’s like an inline process where the program can't move forward until the current line has been completed.
 
 **Example (Synchronous):**
+
+
 ![image](https://github.com/user-attachments/assets/1906391e-aff3-4f2b-b939-5ae6aaf682fb)
 
 
