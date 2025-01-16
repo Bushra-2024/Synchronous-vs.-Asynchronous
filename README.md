@@ -215,6 +215,27 @@ Task completed!
 ```
 
 
+---
+
+### **async/await**
+
+**`async`**: When you put `async` in front of a function, it turns that function into an **asynchronous** function. This means it **automatically returns a Promise**. A Promise is like a promise to do something later, and it will either be successful or fail.
+
+**`await`**: You use `await` inside an **async** function to pause the code and wait for a **Promise** to finish. It only works in an async function. When you use `await`, the code won't move forward until the Promise is resolved (i.e., completed successfully).
+
+
+```javascript
+async function fetchData() {
+  let result = await someAsyncFunction();  // Wait for the result before moving forward
+  console.log(result);  // This runs after the Promise is done
+}
+```
+- `fetchData` is an async function.
+- `await` pauses the code until `someAsyncFunction()` finishes and returns a result and `async` makes the function return a **Promise**
+- Then, `console.log(result)` will print the result after the Promise is resolved or we can say `await` pauses the function until the Promise completes.
+
+
+
 ### **Key Differences and Simple Explanation:**
 
 - **Callback:** Works by passing a function that will be called when the task is finished.  
